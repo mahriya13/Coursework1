@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>My favourite books</title>
+    <!-- adapted code slideshow from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+    <style>
+    .Slides{
+       padding: 30px;
+       margin-left: auto;
+   margin-right: auto;
+   width: 8em
+    }
+
+      .center {
+        display: block;
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 50%;
+      }
+      table, th, td {
+        border:1px solid black;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="mycv.html"> Mahriya Zahid's CV</a></li>
+        <li><a href="places.html">Places I Have Visited</a></li>
+        <li><a href="books.html">My Favorite Books</a></li>
+      </ul>
+    </div>
+    <img class="Slides" src="C:\Users\mahri\Downloads\SOA.jpg" style="width:30%">
+    <img class="Slides" src="C:\Users\mahri\Downloads\PeterPan.jpg" style="width:30%">
+    <img class="Slides"  src="C:\Users\mahri\Downloads\PAP.jpg" style="width:30%">
+    <img class="Slides"  src="C:\Users\mahri\Downloads\IWWV.jpg" style="width:30%">
+
+
+    <button onclick="plusDivs(-1)">&#10094;</button>
+    <button onclick="plusDivs(1)">&#10095;</button>
+
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("Slides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+  </script>
+
+  <table style="width:100%">
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>The Song of Achilles</td>
+      <td>Achilles, "the best of all the Greeks," son of the cruel sea goddess Thetis and the legendary king Peleus, is strong, swift, and beautiful, irresistible to all who meet him. Patroclus is an awkward young prince, exiled from his homeland after an act of shocking violence. Brought together by chance, they forge an inseparable bond, despite risking the gods' wrath.</td>
+<td>
+    </tr>
+
+
+    <tr>
+      <td>Peter Pan</td>
+      <td>Peter Pan, the mischievous boy who refuses to grow up, lands in the Darling's proper middle-class home to look for his shadow. He befriends Wendy, John and Michael and teaches them to fly (with a little help from fairy dust). He and Tinker Bell whisk them off to Never-land where they encounter the Red Indians, the Little Lost Boys, pirates and the dastardly Captain Hook.</td>
+<td>
+    </tr>
+    <tr>
+      <td>Pride & Prejudice</td>
+      <td>1813 novel of manners by Jane Austen. The novel follows the character development of Elizabeth Bennet, the dynamic protagonist of the book who learns about the repercussions of hasty judgments and comes to appreciate the difference between superficial goodness and actual goodness.</td>
+    </tr>
+
+    <tr>
+      <td>If We Were Villains</td>
+      <td>As one of seven young actors studying Shakespeare at an elite arts college, Oliver and his friends play the same roles onstage and off: hero, villain, tyrant, temptress, ingenue, extra. But when the casting changes, and the secondary characters usurp the stars, the plays spill dangerously over into life, and one of them is found dead. The rest face their greatest acting challenge yet: convincing the police, and themselves, that they are blameless.</td>
+<td>
+    </tr>
+  </table>
+<p>
+  <figure>
+    <img src="https://i.pinimg.com/736x/fb/7f/21/fb7f214e362e8667d0ac4f7f1b3712e6.jpg" alt="Knightsbridge"  width=50% class=center></p>
+
+  <figcaption>My Bookshelf</figcaption>
+
+  </figure>
+
+
+  </body>
+</html>

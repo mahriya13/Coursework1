@@ -1,0 +1,34 @@
+
+html { background-color: #dea5a4; }
+body{
+margin: 70px 50px 70px 50px;
+background-color: white;
+padding: 50px 25px 50px 25px;
+font-size: 20px;
+font-family: "Times New Roman", Garamond, serif;
+}
+h1
+{font-size: 20px;
+text-align: center;}
+div ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+div li {
+  float: left;
+}
+
+div li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+div li a:hover {
+  background-color: #111;}
